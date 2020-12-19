@@ -1,0 +1,158 @@
+$active-color: '#FBF9FF';
+$passive-color: '#dbd7d1';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(215, 61%, 73%);
+
+}
+
+.main-container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 100%;
+    min-height: 1500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .search {
+        margin-top: 30px;
+        width: 60%;
+    }
+
+}
+
+.content {
+    .recipe {
+        margin-top: 20px;
+        margin-left: 60px;
+        ;
+        margin-right: 60px;
+        background-color: cadetblue;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+
+        .name {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+
+        }
+
+        .description-bar {
+            margin: 20px;
+            margin-left: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+
+            .image {
+                img {
+                    border-radius: 50%;
+                }
+            }
+
+            .description {
+                margin-top: 30px;
+                margin-left: 120px;
+
+                ul {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .make {
+            text-align: center;
+            justify-content: center;
+            margin: 20px;
+            margin-left: 20px;
+        }
+
+    }
+
+
+}
+
+.liked-box-container {
+    min-width: 84%;
+    max-width: 88%;
+}
+
+.liked-box {
+    background-color: cadetblue;
+    width: auto;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .liked-item {
+        margin: 20px;
+
+        img {
+            border-radius: 50%;
+            
+        }
+
+    }
+
+    .liked-item:hover .X-button{
+        opacity: 1;
+        display: block;
+        transition: .3s ease;
+
+    }
+
+    .X-button {
+        display: none;
+        position: absolute;
+        margin-left: 4%;
+        .btn-circle {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            padding: 6px 0;
+            font-size: 12px;
+            line-height: 1.428571429;
+            border-radius: 15px;
+        }
+
+        .btn-circle.btn-lg {
+            width: 50px;
+            height: 50px;
+            padding: 10px 16px;
+            font-size: 18px;
+            line-height: 1.33;
+            border-radius: 25px;
+        }
+
+        .btn-circle.btn-xl {
+            width: 70px;
+            height: 70px;
+            padding: 10px 16px;
+            font-size: 24px;
+            line-height: 1.33;
+            border-radius: 35px;
+        }
+
+    }
+}
+
+#ClearAllLiked {
+    position: absolute;
+    background: white;
+    display: flex;
+    justify-content: flex-end;
+
+}
